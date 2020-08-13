@@ -1,7 +1,7 @@
 #![deny(warnings)]
 
 use futures_util::TryStreamExt;
-use hyper::service::{make_service_fn, service_fn};
+use hyper::service::{make_service_fn, service_fn} as _;
 use hyper::{Body, Method, Request, Response, Server, StatusCode};
 
 /// This is our service handler. It receives a Request, routes on its
